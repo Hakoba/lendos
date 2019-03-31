@@ -1,0 +1,11 @@
+.about-section {
+  margin-top: -1rem;
+  position: relative;
+  background: linear-gradient(to bottom, $black 100%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  p {
+    margin-bottom: 5rem;
+  }
+  h2 {
+    font-family: 'Varela Round';
+  }
+}

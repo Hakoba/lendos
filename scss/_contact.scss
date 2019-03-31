@@ -1,0 +1,70 @@
+.contact-section {
+  padding: 5rem 0 0;
+  .card {
+    border: 0;
+    border-bottom: 0.25rem solid $primary;
+    background-color: rgb(8, 4, 19);
+    h4 {
+      font-size: 0.8rem;
+      font-family: 'Varela Round', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+    hr {
+      border-color: $primary;
+      border-width: 0.25rem;
+      width: 3rem;
+    }
+  }
+  .social {
+    margin-top: 5rem;
+    a {
+      text-align: center;
+      height: 3rem;
+      width: 3rem;
+      background: fade-out($white, 0.7);
+      border-radius: 100%;
+      line-height: 3rem;
+      color: $gray-100;
+      &:hover {
+        color: fade-out($white, 0.5);
+      }
+      &:active {
+        color: $white;
+      }
+    }
+  }
+}
+// .box{
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #060c21;
+//   //  z-index: 4;
+//   // height: 340px;
+//   &:before{
+//     content: '';
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     right: -2px;
+//     bottom: -2px;
+//     border: 2px solid #fff;
+//     z-index: -1;
+//   }
+//   &:after{
+//     content: '';
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     right: -2px;
+//     bottom: -2px;
+//     background: #fff;
+ 
+//     filter: blur(40px);
+//     // z-index: 2;
+    
+//   }
+  
+// }

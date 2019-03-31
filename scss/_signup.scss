@@ -1,0 +1,36 @@
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, #{fade-in($gray-600, .1)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/map.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  .form-inline {
+    input {
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;
+      padding: 1.25rem 2rem;
+      height: auto;
+      font-family: 'Varela Round';
+      font-size: 80%;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border: 0;
+    }
+  }
+  .card {
+    border: 0;
+    border-bottom: 0.25rem solid $primary;
+    background-color: rgb(8, 4, 19);
+    h4 {
+      font-size: 0.8rem;
+      font-family: 'Varela Round', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+    hr {
+      border-color: $primary;
+      border-width: 0.25rem;
+      width: 3rem;
+    }
+  }   
+}
