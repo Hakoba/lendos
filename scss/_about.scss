@@ -21,18 +21,18 @@
 .about-section {
   
   .featured-text {
-    padding: 2rem;
+    padding: 1em;
     @media (min-width: 992px) {
       padding: 0 0 0 2rem;
       border-left: 0.5rem solid $primary;
     }
   }
   .project-text {
-    padding: 3rem;
+    padding: 1em;
     font-size: 90%;
    
     @media (min-width: 992px) {
-      padding: 2rem;
+      padding: 2em;
       hr {
         border-color: $primary;
         border-width: .25rem;

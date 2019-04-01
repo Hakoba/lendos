@@ -133,8 +133,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 1, 22, 0.3)), color-stop(70%, rgba(4, 1, 22, 0.7)), to(#040116));
-  background: linear-gradient(to right, rgba(4, 1, 22, 0.3) 0%, rgba(4, 1, 22, 0.7) 70%, #040116 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.3)), color-stop(70%, rgba(4, 1, 22, 0.7)), to(#040116));
+  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.3) 0%, rgba(4, 1, 22, 0.7) 70%, #040116 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -190,6 +190,92 @@
   }
 }
 
+.btn-consult {
+  position: relative;
+}
+
+.btnflip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.btnflip-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btnflip-item.btnflip__front {
+  -webkit-transform: rotateX(0deg) translateZ(20px);
+  transform: rotateX(0deg) translateZ(20px);
+}
+
+.btnflip:hover .btnflip-item.btnflip__front {
+  -webkit-transform: rotateX(-180deg) translateZ(20px);
+  transform: rotateX(-180deg) translateZ(20px);
+}
+
+.btnflip-item.btnflip__back {
+  -webkit-transform: rotateX(180deg) translateZ(20px);
+  transform: rotateX(180deg) translateZ(20px);
+}
+
+.btnflip:hover .btnflip-item.btnflip__back {
+  -webkit-transform: rotateX(0deg) translateZ(20px);
+  transform: rotateX(0deg) translateZ(20px);
+}
+
+.btnflip-item.btnflip__center {
+  background: -webkit-gradient(linear, right top, left top, from(#c31a5b), to(#7129bd));
+  background: linear-gradient(to left, #c31a5b, #7129bd);
+}
+
+.btnflip-item.btnflip__center::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#ffdd1f), to(#c31a5b));
+  background: linear-gradient(to left, #ffdd1f, #c31a5b);
+  border-radius: 30px;
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
+}
+
+.btnflip:hover .btnflip-item.btnflip__center {
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
+
 .btn {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -239,7 +325,7 @@
 }
 
 .about-section .featured-text {
-  padding: 2rem;
+  padding: 1em;
 }
 
 @media (min-width: 992px) {
@@ -250,13 +336,13 @@
 }
 
 .about-section .project-text {
-  padding: 3rem;
+  padding: 1em;
   font-size: 90%;
 }
 
 @media (min-width: 992px) {
   .about-section .project-text {
-    padding: 2rem;
+    padding: 2em;
   }
   .about-section .project-text hr {
     border-color: #df6616;
@@ -383,8 +469,8 @@
 }
 
 .smart-contracts-section {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.9)), color-stop(75%, rgba(4, 1, 22, 0.7)), to(#040116)), url("../img/map.jpg");
-  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.9) 0%, rgba(4, 1, 22, 0.7) 75%, #040116 100%), url("../img/map.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.9)), color-stop(23%, rgba(4, 1, 22, 0.7)), to(#040116)), url("../img/map.jpg");
+  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.9) 0%, rgba(4, 1, 22, 0.7) 23%, #040116 100%), url("../img/map.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
