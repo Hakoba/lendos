@@ -1,11 +1,43 @@
 .about-section {
-  margin-top: -1rem;
+  background: linear-gradient(to bottom, #{fade-out($black, .1)} 0%,#{fade-out($black, .3)} 75%,$black 100%), url('../img/cells.png');
+  background-color: #000;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-bottom: 200px;
+  // margin-top: -3rem;
   position: relative;
-  background: linear-gradient(to bottom, $black 100%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  // height: 100vh;
+  // background: linear-gradient(to bottom, $black 100%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
   p {
     margin-bottom: 5rem;
   }
   h2 {
+    // margin-top: 4rem;
     font-family: 'Varela Round';
+  }
+}
+.about-section {
+  
+  .featured-text {
+    padding: 2rem;
+    @media (min-width: 992px) {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid $primary;
+    }
+  }
+  .project-text {
+    padding: 3rem;
+    font-size: 90%;
+   
+    @media (min-width: 992px) {
+      padding: 2rem;
+      hr {
+        border-color: $primary;
+        border-width: .25rem;
+        width: 30%;
+      }
+    }
   }
 }

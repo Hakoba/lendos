@@ -1,13 +1,13 @@
 /*!
- * Start Bootstrap - Grayscale v5.0.6 (https://startbootstrap.com/template-overviews/grayscale)
+ * Start Bootstrap - SRC v0.0.1 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/animeSila/blob/master/LICENSE)
  */
 
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
 #mainNav {
   min-height: 56px;
-  background-color: rgba(0, 31, 61, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #mainNav .navbar-toggler {
@@ -42,12 +42,48 @@
   background-color: transparent;
 }
 
+#mainNav .navbar-nav #sc-link {
+  position: relative;
+  display: inline-block;
+}
+
+#mainNav .navbar-nav #sc-link:hover .dropdown-content {
+  display: block;
+}
+
+#mainNav .navbar-shrink {
+  background-color: rgba(4, 1, 22, 0.6) !important;
+}
+
+#mainNav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  color: rgba(248, 249, 250, 0.8);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(26, 3, 3, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(26, 3, 3, 0.2);
+  padding: 12px 1px 1px 1px;
+  z-index: 20;
+}
+
+#mainNav .dropdown-content a {
+  display: block;
+  border-bottom: 5px solid transparent;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3px;
+}
+
+#mainNav .dropdown-content a:hover {
+  border-bottom: 5px solid #df6616;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
@@ -68,7 +104,7 @@
     color: #312058;
   }
   #mainNav.navbar-shrink {
-    background-color: rgba(0, 31, 61, 0.8);
+    background-color: rgba(4, 1, 22, 0.6);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #fff;
@@ -97,8 +133,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.3)), color-stop(75%, rgba(4, 1, 22, 0.7)), to(#040116));
-  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.3) 0%, rgba(4, 1, 22, 0.7) 75%, #040116 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 1, 22, 0.3)), color-stop(70%, rgba(4, 1, 22, 0.7)), to(#040116));
+  background: linear-gradient(to right, rgba(4, 1, 22, 0.3) 0%, rgba(4, 1, 22, 0.7) 70%, #040116 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -183,10 +219,15 @@
 }
 
 .about-section {
-  margin-top: -1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.9)), color-stop(75%, rgba(4, 1, 22, 0.7)), to(#040116)), url("../img/cells.png");
+  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.9) 0%, rgba(4, 1, 22, 0.7) 75%, #040116 100%), url("../img/cells.png");
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-bottom: 200px;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #040116), color-stop(75%, rgba(4, 1, 22, 0.9)), to(rgba(4, 1, 22, 0.8)));
-  background: linear-gradient(to bottom, #040116 100%, rgba(4, 1, 22, 0.9) 75%, rgba(4, 1, 22, 0.8) 100%);
 }
 
 .about-section p {
@@ -195,6 +236,33 @@
 
 .about-section h2 {
   font-family: 'Varela Round';
+}
+
+.about-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .about-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #df6616;
+  }
+}
+
+.about-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .about-section .project-text {
+    padding: 2rem;
+  }
+  .about-section .project-text hr {
+    border-color: #df6616;
+    border-width: .25rem;
+    width: 30%;
+  }
 }
 
 .projects-section {
@@ -312,6 +380,70 @@
 
 .contact-section .social a:active {
   color: #fff;
+}
+
+.smart-contracts-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.9)), color-stop(75%, rgba(4, 1, 22, 0.7)), to(#040116)), url("../img/map.jpg");
+  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.9) 0%, rgba(4, 1, 22, 0.7) 75%, #040116 100%), url("../img/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.smart-contracts-section .smart-card {
+  background-color: #0b3264;
+  color: white;
+  margin-top: 3em;
+  position: relative;
+}
+
+.smart-contracts-section .smart-card:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  background: #fff;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.smart-contracts-section .smart-card:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: #fff;
+  z-index: -2;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+.smart-contracts-section .smart-card:before, .smart-contracts-section .smart-card:after {
+  background: linear-gradient(50deg, #61dce0, #0b3264, #00bcb4);
+}
+
+.smart-contracts-section .smart-card p {
+  margin: 0;
+}
+
+.smart-contracts-section .smart-card .left {
+  font-size: 18px;
+}
+
+.smart-contracts-section .smart-card .small {
+  line-height: 100%;
+}
+
+.smart-contracts-section h2 {
+  margin-top: 4rem;
+  font-family: 'Varela Round';
 }
 
 body {

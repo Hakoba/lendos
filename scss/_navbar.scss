@@ -1,6 +1,7 @@
 #mainNav {
   min-height: 56px;
-  background-color: rgba( $gray-900, 0.8);
+  // background-color: rgba( $gray-900, 0.8);
+  background-color: rgba(black,0.9);
   .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
@@ -30,14 +31,47 @@
           background-color: transparent;
         }
       }
+    }
+    #sc-link{
+      position: relative;
+      display: inline-block;
      
+      
+     
+    }
+    #sc-link:hover .dropdown-content {
+      display: block;
+
+    }
+  }
+  .navbar-shrink {
+    background-color: rgba( $black, 0.6) !important;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(black,0.95);
+    width:100%;
+    color: rgba( $gray-100, 0.8);
+    box-shadow: 0px 8px 16px 0px rgba(26, 3, 3, 0.2);
+    padding: 12px 1px 1px 1px;
+    z-index: 20;
+    a{
+      display: block;
+      border-bottom: 5px solid transparent;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 3px;
+      &:hover{
+        border-bottom: 5px solid $primary;
+      }
     }
   }
   @media (min-width: 992px) {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    // background-color: transparent;
     transition: background-color 0.3s ease-in-out;
     .navbar-brand {
       padding: .5rem 0;
@@ -55,7 +89,7 @@
       }
     }
     &.navbar-shrink {
-      background-color: rgba( $gray-900, 0.8);
+      background-color: rgba( $black, 0.6);
       .navbar-brand {
         color: $white;
       }
