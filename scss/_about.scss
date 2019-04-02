@@ -5,17 +5,27 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
   // margin-top: -3rem;
   position: relative;
   // height: 100vh;
   // background: linear-gradient(to bottom, $black 100%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
   p {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   h2 {
     // margin-top: 4rem;
     font-family: 'Varela Round';
+  }
+  .bg-blue {
+    background-color: rgba(22, 17, 88, 0.65);
+    margin-top: 15px;
+  }
+  .about-blockchain{
+    margin-bottom: 3em;
+  }
+  .about-something{
+    margin-bottom: 3em;
   }
 }
 .about-section {
@@ -40,4 +50,14 @@
       }
     }
   }
+}
+#top-card{
+  border-bottom: 0.5rem solid $primary;
+}
+.bottom-card{
+
+  border: 0.5rem solid $primary;
+}
+p{
+  color:white;
 }

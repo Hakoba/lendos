@@ -1,7 +1,7 @@
 .masthead {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100vh;
     min-height: 35rem;
     padding: 15rem 0;
      background: linear-gradient(to bottom, #{fade-out($black, 0.7)} 0%,#{fade-out($black, .3)} 70%,$black 100%);
@@ -111,4 +111,17 @@
 }
 .btnflip:hover .btnflip-item.btnflip__center {
   transform: rotateX(-180deg);
+}
+@media screen and (max-width:475px){
+h1{
+  max-width: 70%;
+  font-size: 29px !important;
+}
+.btnflip__front{
+  font-size: 17px !important;
+}
+.btnflip-item{
+  width: 160% !important;
+  left: 20% !important;
+}
 }
