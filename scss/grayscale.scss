@@ -10,7 +10,7 @@
 @import 'smart-contracts.scss';
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
 body {
- 
+  background-color: #040116!important;
   letter-spacing: 0.0625em;
 }
 p,a,span{
@@ -51,6 +51,10 @@ footer {
 }
 .dn{
   display: none;
+}
+.o22{
+  display: flex;
+  justify-content: space-around;
 }
 #popup__toggle{bottom:25px;right:10px;position:fixed;z-index:999;}
 .img-circle{background-color:$primary;box-sizing:content-box;-webkit-box-sizing:content-box;}

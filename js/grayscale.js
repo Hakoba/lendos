@@ -29,12 +29,12 @@
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-      $(".dropdown-content").addClass("navbar-shrink");
+      // $("#mainNav").addClass("navbar-shrink");
+      // $(".dropdown-content").addClass("navbar-shrink");
       $("#app").addClass("dn");
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
-      $(".dropdown-content").removeClass("navbar-shrink");
+      // $("#mainNav").removeClass("navbar-shrink");
+      // $(".dropdown-content").removeClass("navbar-shrink");
       $("#app").removeClass("dn");
     }
   };
@@ -55,5 +55,12 @@
       duration: 1500,
       
   })
-  
+  $('#front').click(function(){
+    $('#front').toggleClass("toback");
+    $('#back').toggleClass("tofront");
+});
+$('#back').click(function(){
+  $('#front').toggleClass("toback");
+  $('#back').toggleClass("tofront");
+});
 })(jQuery); // End of use strict

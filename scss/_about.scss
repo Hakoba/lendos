@@ -19,7 +19,7 @@
   }
   .bg-blue {
     background-color: rgba(22, 17, 88, 0.65);
-    margin-top: 15px;
+    margin-top: 20px !important;
   }
   .about-blockchain{
     margin-bottom: 3em;
@@ -60,4 +60,16 @@
 }
 p{
   color:white;
+}
+@media screen and (max-width: 991px){
+.mt-35{
+  margin-top: 25px;
+}
+.mt-50{
+  margin-top: 50px;
+ 
+}
+.cf{
+  margin-bottom: 55px;
+}
 }

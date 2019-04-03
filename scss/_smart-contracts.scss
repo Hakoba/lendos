@@ -43,7 +43,7 @@
             background: linear-gradient(50deg,rgb(200, 55, 50),rgb(109, 97, 30),#d6580e)
         }
         &:last-child:before,&:last-child:after{
-            background: linear-gradient(50deg,rgb(22, 138, 47),rgb(24, 187, 146),#136109)
+            background: linear-gradient(50deg,rgb(22, 138, 47),rgb(3, 99, 102),#136109)
         }
         &:last-child{
             margin-bottom: 40px;
@@ -57,10 +57,10 @@
         .small{
             line-height: 100%;
         }
-        &:hover{
-            background: linear-gradient(50deg,rgb(22, 14, 70),#0c0322);
-            transition: 0.3s;
-        }
+        // &:hover{
+        //     background: linear-gradient(50deg,rgb(22, 14, 70),#0c0322);
+        //     transition: 0.3s;
+        // }
     }
     h2 {
       margin-top: 4rem;

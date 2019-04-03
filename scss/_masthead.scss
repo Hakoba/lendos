@@ -4,7 +4,7 @@
     height: 100vh;
     min-height: 35rem;
     padding: 15rem 0;
-     background: linear-gradient(to bottom, #{fade-out($black, 0.7)} 0%,#{fade-out($black, .3)} 70%,$black 100%);
+     background: linear-gradient(to bottom, #{fade-out($black, 0.9)} 0%,#{fade-out($black, .2)} 20%,$black 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -84,17 +84,27 @@
   transition: 1s;
 }
 .btnflip-item.btnflip__front {
-  transform: rotateX(0deg) translateZ(20px);
+  // transform: rotateX(0deg) translateZ(20px);
+  background: linear-gradient(to left, #c31a5b, #7129bd);
 }
-.btnflip:hover .btnflip-item.btnflip__front {
-  transform: rotateX(-180deg) translateZ(20px);
-}
+// .btnflip:hover .btnflip-item.btnflip__front {
+//   transform: rotateX(-180deg) translateZ(20px);
+// }
 .btnflip-item.btnflip__back {
-  transform: rotateX(180deg) translateZ(20px);
+  background: linear-gradient(to left, #ffdd1f, #c31a5b);
+  visibility: hidden;
+  // transform: rotateX(180deg) translateZ(20px);
 }
-.btnflip:hover .btnflip-item.btnflip__back {
-  transform: rotateX(0deg) translateZ(20px);
-}
+// .btnflip:hover .btnflip-item.btnflip__back {
+//   transform: rotateX(0deg) translateZ(20px);
+// }
+  // .btnflip:active .btnflip-item.btnflip__front {
+  //   transform: rotateX(-180deg) translateZ(20px);
+  // }
+
+  // .btnflip:active .btnflip-item.btnflip__back {
+  //   transform: rotateX(0deg) translateZ(20px);
+  // }
 .btnflip-item.btnflip__center {
   background: linear-gradient(to left, #c31a5b, #7129bd);
 }
@@ -109,13 +119,16 @@
   border-radius: 30px;
   transform: translateZ(-1px);
 }
-.btnflip:hover .btnflip-item.btnflip__center {
+// .btnflip:hover .btnflip-item.btnflip__center {
+//   transform: rotateX(-180deg);
+// }
+.btnflip:active .btnflip-item.btnflip__center {
   transform: rotateX(-180deg);
 }
 @media screen and (max-width:475px){
 h1{
-  max-width: 70%;
-  font-size: 29px !important;
+  max-width: 80%;
+  font-size: 20px !important;
 }
 .btnflip__front{
   font-size: 17px !important;
@@ -124,4 +137,48 @@ h1{
   width: 160% !important;
   left: 20% !important;
 }
+}
+
+// #container {
+//   display: inline-block;
+//   position: relative;
+//   width: 500px;
+//   line-height: 45px;
+// }
+// #button {
+//   // background: none repeat scroll 0 0 #555;
+//   color: #fff;
+//   cursor: pointer;
+//   float: left;
+//   height: 50px;
+//   text-align: center;
+//   width: 140px;
+// }
+// #front, #back {
+//   // background: none repeat scroll 0 0 #ccc;
+//   height: 50px;
+//   margin: 0px auto;
+//   position: absolute;
+//   right: 0;
+//   text-align: center;
+//   transform: rotateX(0deg);
+//   transition: all 0.7s ease 0s;
+//   width: 360px;
+// }
+#back {
+  // background: none repeat scroll 0 0 #ff0000;
+  margin: -20px 0;
+ transform: rotateX(270deg);
+  transition: all 0.7s ease 0s;
+  visibility: hidden;
+}
+.toback {
+  transform: rotateX(270deg) !important;
+  z-index: 9;
+}
+.tofront {
+  margin: 0 !important;
+ visibility: visible !important;
+ z-index: 10;
+  transform: rotateX(0deg) !important;
 }

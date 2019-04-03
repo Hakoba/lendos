@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Название</title>
+  <title>Future Industries</title>
   <link rel="stylesheet" href="css/remodal-default-theme.css">
   <link rel="stylesheet" href="css/remodal.css">
   <!-- Bootstrap core CSS -->
@@ -36,12 +36,14 @@
 
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Future Industries</a>
       <div id="app" style="margin-left: 5%;">
-          <span class="text-white" style="position:relative"><img src="img/btc.png" style="position: absolute;left: -30px" width=20 alt="btc"> {{ btc }} USD </span>
-      <br>
-          <span class="text-white" style="position:relative;"><img src="img/ethernium.png" style="position: absolute;left:-30px" width=20 alt="btc">
-                            {{ ethernium }} USD </span>
+        <span class="text-white" style="position:relative"><img src="img/btc.png" style="position: absolute;left: -30px"
+            width=20 alt="btc"> {{ btc }} USD </span>
+        <br>
+        <span class="text-white" style="position:relative;"><img src="img/ethernium.png"
+            style="position: absolute;left:-30px" width=20 alt="btc">
+          {{ ethernium }} USD </span>
 
-        </div>
+      </div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -50,14 +52,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          
+
           <li class="nav-item" id="sc-link">
             <a class="nav-link js-scroll-trigger" href="#smart-contracts">Смарт контракты</a>
-            <div class="dropdown-content">
+            <!-- <div class="dropdown-content">
               <a class="js-scroll-trigger" href="#smart-contracts">Oracul/Oracle?</a>
               <a class="js-scroll-trigger" href="#smart-contracts">Обычный</a>
               <a class="js-scroll-trigger" href="#smart-contracts">Для бизнеса</a>
-            </div>
+            </div> -->
           </li>
 
           <li class="nav-item">
@@ -83,10 +85,10 @@
       <p><img src="img/mini.png"></p>
       <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
       <form id="form">
-        <h2 id="modal1Title">Бла-бла Бла-бла Бла-бла Бла-бла <br>Lorem ipsum dolor sit amet consectetur adipisicing.
+        <h2 id="modal1Title"> Введите свои данные <br>и наш оператор вам скоро позвонит
         </h2>
-        <input type="text" class="putName" name="name" placeholder="Ваше ваше имя" required>
-        <input name="phone" type="tel" class="putPhone" placeholder="Введите номер телефона" required>
+        <input type="text" class="putName" name="name" placeholder="Ваше имя" required>
+        <input name="phone" type="tel" class="putPhone" placeholder="Номер телефона" required>
         <input type="submit" name="submit" style="line-height: 4px;font-family: sans-serif"
           class="btn btn-primary js-scroll-trigger" value="ОТПРАВИТЬ">
         <!-- <button type="submit" class="btn btn-primary">Отаправить</button> -->
@@ -119,10 +121,15 @@
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Разработка - Программирование</h2>
         <div class=" btn-consult js-scroll-trigger">
           <a class="btnflip" href="#">
+            <!-- <div  id="button">Нажми сюда</div> -->
+            <div class="btnflip-item btnflip__front" id="front">Проконсультироваться</div>
+            <div class="btnflip-item btnflip__back" tel="8(900)444-3333" id="back">8(900)444-3333</div>
+          </a>
+          <!-- <a class="btnflip" href="#">
             <span class="btnflip-item btnflip__front">Проконсультироваться</span>
             <span class="btnflip-item btnflip__center"></span>
             <span class="btnflip-item btnflip__back" tel="8(900)444-3333">8(900)444-3333</span>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -135,11 +142,12 @@
         <div class="col-lg-10 mx-auto">
           <h2 class="text-white mb-4 text-uppercase">Smart contracts</h2>
           <div class="col-xs-12">
-            <a href="#signup" class="card js-scroll-trigger smart-card  h-60">
+            <div href="" class="card js-scroll-trigger smart-card  h-60">
               <div class="card-body text-center">
                 <div class="row">
                   <div class="col-5 posr">
-                    <p class="left"><img src="img/or.png" style="margin-right: 10px;" width=30 alt=""> Смарт-контракт <br>
+                    <p class="left"><img src="img/or.png" style="margin-right: 10px;" width=30 alt=""> Смарт-контракт
+                      <br>
                       оракул</p>
                   </div>
                   <div class="col-7">
@@ -148,13 +156,14 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
 
-            <a href="#signup" class="card js-scroll-trigger smart-card  h-60">
+            <div href="" class="card js-scroll-trigger smart-card  h-60">
               <div class="card-body text-center">
                 <div class="row">
                   <div class="col-5 posr">
-                    <p class="left"> <img src="img/usual.png" style="margin-right: 10px;" width=30 alt="">Смарт-контракт <br>
+                    <p class="left"> <img src="img/usual.png" style="margin-right: 10px;" width=30 alt="">Смарт-контракт
+                      <br>
                       обычный</p>
                   </div>
                   <div class="col-7">
@@ -163,9 +172,9 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
 
-            <a href="#signup" class="card js-scroll-trigger smart-card  h-60">
+            <div href="" class="card js-scroll-trigger smart-card  h-60">
               <div class="card-body text-center">
                 <div class="row">
                   <div class="col-5 posr">
@@ -178,7 +187,7 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
           <!-- <p class="text-white-50">Блокче́йн (англ. blockchain[1], изначально block chain[2]) — выстроенная по определённым правилам непрерывная последовательная цепочка блоков (связный список), содержащих информацию. Чаще всего копии цепочек блоков хранятся на множестве разных компьютеров независимо друг от друга.
          </p> -->
@@ -199,55 +208,48 @@
           <div class="bg-blue text-center h-100 project">
             <div class="d-flex h-100">
               <div id="top-card" class="project-text w-100  text-center text-lg-left ">
-
                 <h4 class="text-white">blockchain</h4>
                 <p class="mb-0 text-white">Блокче́йн (англ. blockchain[1], изначально block chain[2]) — выстроенная по
                   определённым правилам содержащих информацию. Чаще всего копии цепочек блоков хранятся на множестве
                   разных компьютеров независимо друг от друга.</p>
-                <!-- <hr class="d-none d-lg-block mb-0 ml-0"> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid cf">
       <div class="about-something row mt-3 justify-content-center mb-5 col-lg-12  project-one-row" style="margin:0">
-
-       
         <div class="col-xs-12 col-lg-4">
-            <div class="bg-blue text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left featured-text">
-  
-                  <h4 class="text-white">Lorem</h4>
-                  <p class="mb-0 text-white">Lorem ipssi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
-                  <!-- <hr class="d-none d-lg-block mb-0 ml-0"> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        <div class=" col-xs-12 col-lg-3">
-            <div class="bg-blue text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left featured-text">
-  
-                  <h4 class="text-white">Lorem</h4>
-                  <p class="mb-0 text-white">Lorem ipssi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
-                  <!-- <hr class="d-none d-lg-block mb-0 ml-0"> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <div class=" col-xs-12 col-lg-4">
           <div class="bg-blue text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left featured-text">
 
                 <h4 class="text-white">Lorem</h4>
                 <p class="mb-0 text-white">Lorem ipssi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
-                <!-- <hr class="d-none d-lg-block mb-0 ml-0"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs-12 mt-35 col-lg-3">
+          <div class="bg-blue text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left featured-text">
+
+                <h4 class="text-white">Lorem</h4>
+                <p class="mb-0 text-white">Lorem ipssi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-xs-12 mt-35 col-lg-4">
+          <div class="bg-blue text-center h-100 project">
+            <div class="d-flex  h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left featured-text">
+
+                <h4 class="text-white">Lorem</h4>
+                <p class="mb-0 text-white">Lorem ipssi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
               </div>
             </div>
           </div>
@@ -256,89 +258,35 @@
       <div class="row mb-3 mt-3 justify-content-center">
         <div class="col-lg-5">
           <div class="bg-blue text-center h-100 project">
-            <div class="d-flex h-100">
+            <div class="d-flex  h-100">
               <div class="bottom-card project-text w-100 text-center text-lg-left ">
 
                 <h4 class="text-white">Lorem</h4>
-                <p class="mb-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias
-                  nisi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
-                <!-- <hr class="d-none d-lg-block mb-0 ml-0"> -->
+                <div class="o22 mb-0 text-white"><img style="display: inline" width=60 height=60 src="img/o1.png"
+                    alt=""><img style="display: inline" width=60 height=60 src="img/o2.png" alt=""><img width=60
+                    height=60 style="display: inline" src="img/o3.png" alt=""></div>
               </div>
             </div>
           </div>
         </div>
         <div class=" col-lg-5">
           <div class="bg-blue text-center h-100 project">
-            <div class="d-flex h-100">
+            <div class="d-flex mt-50 h-100">
               <div class="bottom-card project-text w-100  text-center text-lg-left ">
 
                 <h4 class="text-white">Lorem</h4>
                 <p class="mb-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias
                   nisi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
-                <!-- <hr class="d-none d-lg-block mb-0 ml-0"> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <img src="img/cells.png" class="cells-main img-fluid" alt=""> -->
 
   </section>
 
-  <!-- Projects Section -->
-  <!-- <section id="projects" class="projects-section ">
-    <div class="container">
 
-   
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/blockchain.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4 class="text-uppercase" style="color:#bbb">Anime</h4>
-            <p class="text-white-50 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, recusandae quas vel exercitationem atque culpa quibusdam laborum molestias provident vitae delectus, temporibus reiciendis? Voluptate minus dolore ratione sit. Dicta, sit.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0 project-one-row">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/earth-in-arm.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Lorem</h4>
-                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias nisi suscipit nam deserunt labore consequuntur nesciunt vel quae.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center no-gutters project-two-row">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/map.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section> -->
 
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
@@ -404,14 +352,16 @@
     <div class="container ">
 
       <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
+        <a href="https://t.me/CharlesMaurice" class="mx-2">
+          <i class="fas fa-paper-plane "></i>
         </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
+        <a href="https://wa.me/88005553535" class="mx-2">
+          <i style="    padding-top: 10px;
+          padding-left: 5px;
+          font-size: 27px;" class="fab fa-whatsapp"></i>
         </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
+        <a href="#modal" class="mx-2">
+          <i class="fas fa-envelope"></i>
         </a>
       </div>
 
@@ -419,9 +369,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white">
+  <footer style="margin-top:-10px;margin-bottom:-10px" class="bg-black small text-center text-white">
     <div class="container">
-      Copyright &copy; Аneme 2019
+      Copyright &copy; <a href="https://github.com/hakoba">д</a> 2019
     </div>
   </footer>
 
@@ -455,13 +405,11 @@
         if (xhr.status != 200) {
           console.log(xhr.status + ': ' + xhr.statusText);
         } else {
-          
-            this.ethernium = JSON.parse(xhr.responseText);
-            this.btc = Math.round(this.ethernium.btcPrice,2)
-             this.ethernium = Math.round(this.ethernium.price_usd,2);
+
+          this.ethernium = JSON.parse(xhr.responseText);
+          this.btc = Math.round(this.ethernium.btcPrice, 2)
+          this.ethernium = Math.round(this.ethernium.price_usd, 2);
         }
-        
-    
         // .then(response => (this.btc = response));
       }
     })

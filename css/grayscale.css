@@ -139,8 +139,8 @@
   height: 100vh;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.3)), color-stop(70%, rgba(4, 1, 22, 0.7)), to(#040116));
-  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.3) 0%, rgba(4, 1, 22, 0.7) 70%, #040116 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 1, 22, 0.1)), color-stop(20%, rgba(4, 1, 22, 0.8)), to(#040116));
+  background: linear-gradient(to bottom, rgba(4, 1, 22, 0.1) 0%, rgba(4, 1, 22, 0.8) 20%, #040116 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -239,23 +239,14 @@
 }
 
 .btnflip-item.btnflip__front {
-  -webkit-transform: rotateX(0deg) translateZ(20px);
-  transform: rotateX(0deg) translateZ(20px);
-}
-
-.btnflip:hover .btnflip-item.btnflip__front {
-  -webkit-transform: rotateX(-180deg) translateZ(20px);
-  transform: rotateX(-180deg) translateZ(20px);
+  background: -webkit-gradient(linear, right top, left top, from(#c31a5b), to(#7129bd));
+  background: linear-gradient(to left, #c31a5b, #7129bd);
 }
 
 .btnflip-item.btnflip__back {
-  -webkit-transform: rotateX(180deg) translateZ(20px);
-  transform: rotateX(180deg) translateZ(20px);
-}
-
-.btnflip:hover .btnflip-item.btnflip__back {
-  -webkit-transform: rotateX(0deg) translateZ(20px);
-  transform: rotateX(0deg) translateZ(20px);
+  background: -webkit-gradient(linear, right top, left top, from(#ffdd1f), to(#c31a5b));
+  background: linear-gradient(to left, #ffdd1f, #c31a5b);
+  visibility: hidden;
 }
 
 .btnflip-item.btnflip__center {
@@ -277,15 +268,15 @@
   transform: translateZ(-1px);
 }
 
-.btnflip:hover .btnflip-item.btnflip__center {
+.btnflip:active .btnflip-item.btnflip__center {
   -webkit-transform: rotateX(-180deg);
   transform: rotateX(-180deg);
 }
 
 @media screen and (max-width: 475px) {
   h1 {
-    max-width: 70%;
-    font-size: 29px !important;
+    max-width: 80%;
+    font-size: 20px !important;
   }
   .btnflip__front {
     font-size: 17px !important;
@@ -294,6 +285,29 @@
     width: 160% !important;
     left: 20% !important;
   }
+}
+
+#back {
+  margin: -20px 0;
+  -webkit-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  visibility: hidden;
+}
+
+.toback {
+  -webkit-transform: rotateX(270deg) !important;
+  transform: rotateX(270deg) !important;
+  z-index: 9;
+}
+
+.tofront {
+  margin: 0 !important;
+  visibility: visible !important;
+  z-index: 10;
+  -webkit-transform: rotateX(0deg) !important;
+  transform: rotateX(0deg) !important;
 }
 
 .btn {
@@ -346,7 +360,7 @@
 
 .about-section .bg-blue {
   background-color: rgba(22, 17, 88, 0.65);
-  margin-top: 15px;
+  margin-top: 20px !important;
 }
 
 .about-section .about-blockchain {
@@ -394,6 +408,18 @@
 
 p {
   color: white;
+}
+
+@media screen and (max-width: 991px) {
+  .mt-35 {
+    margin-top: 25px;
+  }
+  .mt-50 {
+    margin-top: 50px;
+  }
+  .cf {
+    margin-bottom: 55px;
+  }
 }
 
 .projects-section {
@@ -564,7 +590,7 @@ p {
 }
 
 .smart-contracts-section .smart-card:last-child:before, .smart-contracts-section .smart-card:last-child:after {
-  background: linear-gradient(50deg, #168a2f, #18bb92, #136109);
+  background: linear-gradient(50deg, #168a2f, #036366, #136109);
 }
 
 .smart-contracts-section .smart-card:last-child {
@@ -583,12 +609,6 @@ p {
   line-height: 100%;
 }
 
-.smart-contracts-section .smart-card:hover {
-  background: linear-gradient(50deg, #160e46, #0c0322);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .smart-contracts-section h2 {
   margin-top: 4rem;
   font-family: 'Varela Round';
@@ -605,6 +625,7 @@ p {
 }
 
 body {
+  background-color: #040116 !important;
   letter-spacing: 0.0625em;
 }
 
@@ -649,6 +670,14 @@ footer {
 
 .dn {
   display: none;
+}
+
+.o22 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 #popup__toggle {
